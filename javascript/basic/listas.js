@@ -6,8 +6,10 @@ console.log(joao);
 //.push serve para adicionar um elemento no final da lista
 names.push("pedro");
 
+
 // o .unshift serve para adicionar um elemento no inicio da lista
 names.unshift("fernanda");
+
 
 //excluir o ultimo valor de uma lista
 names.pop();
