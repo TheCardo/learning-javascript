@@ -1,19 +1,25 @@
-const numbers = [1, 2, 3, 4, 5];
-const numbersMultiplyByTwo = numbers.map(function(number){
-    return number * 2
 
-})
-const ages = [8, 13, 27, 30, 22, 40];
+const todos = [
+    {
+        id:1,
+        descripition: "estudar programação",
+        isCompleted: false
+    },
+    {
+        id:2,
+        descripition: "ler",
+        isCompleted: true
+    },
+    {
+        id:3,
+        descripition:"treinar",
+        isCompleted:false
+    }
+]
+//convertendo uma variavel para JSON
+const todosJSON = JSON.stringify(todos);
+console.log(todosJSON)
 
-const evenAges = ages.filter(function(age){
-    return age % 2 === 0
-
-});
-
-const ages2 = [8, 13, 27, 30, 22, 40];
-const sumOfAges = ages2.reduce(function(age, accumalator){
-    return accumalator + age
-    
-}, 0)
-
-console.log(sumOfAges)
+//convertendo JSON em uma variavel
+const todosList = JSON.parse(todosJSON)
+console.log(todosList)
